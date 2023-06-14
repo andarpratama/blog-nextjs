@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import style from './page.module.css'
 
 const links = [
   {
@@ -36,14 +37,15 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div>
+    <div className={style.container} >
       <Link href='/' >Andar Pratama</Link>
-      <div>
+      <div className={style.links} >
         {links.map((link) => (
-          <Link key={link.id} href={link.url}>
+          <Link key={link.id} href={link.url} className={style.link} >
             {link.title}
           </Link>
         ))}
+        <button className={style.logout} >Logout</button>
       </div>
     </div>
   )
