@@ -1,16 +1,25 @@
 import Image from 'next/image'
 import React from 'react'
 import style from './page.module.css'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
     <div className={style.container} >
-      <div>©2023 Lamamia. All rights reserved.</div>
+      <div>©2023 Andar Pratama. All rights reserved.</div>
       <div className={style.social} >
-        <Image src="/1.png" width={15} height={15} className={style.icon} alt="Lama Dev Facebook Account" />
-        <Image src="/2.png" width={15} height={15} className={style.icon} alt="Lama Dev" />
-        <Image src="/3.png" width={15} height={15} className={style.icon} alt="Lama Dev" />
-        <Image src="/4.png" width={15} height={15} className={style.icon} alt="Lama Dev" />
+        <Link href='/' >
+          <Image src="/1.png" width={22} height={22} className={style.icon} alt="Andar Pratama Facebook Account" />
+        </Link>
+        <Link href='/' >
+          <Image src="/2.png" width={22} height={22} className={style.icon} alt="Andar Pratama Instagram Account" />
+        </Link>
+        <Link href='/' >
+          <Image src="/3.png" width={22} height={22} className={style.icon} alt="Andar Pratama Twitter Account" />
+        </Link>
+        <Link href='/' >
+          <Image src="/4.png" width={22} height={22} className={style.icon} alt="Andar Pratama Youtube Account" />
+        </Link>
       </div>
     </div>
   )

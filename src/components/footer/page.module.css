@@ -1,9 +1,11 @@
 .container {
-  height: 50px;
+  padding-bottom: 24px;
+  height: 80px;
   font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .social {
@@ -15,4 +17,15 @@
 .icon {
   opacity: 0.6;
   cursor: pointer;
+  transition: .5s;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
 }
