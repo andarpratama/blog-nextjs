@@ -1,25 +1,22 @@
 import Image from 'next/image'
 import React from 'react'
-import style from './page.module.css'
+import style from './footer.module.css'
 import Link from 'next/link'
+import { socialMedia } from '@/utils/socialMedia'
 
 const Footer = () => {
   return (
     <div className={style.container} >
       <div>©2023 Andar Pratama. All rights reserved.</div>
       <div className={style.social} >
-        <Link href='/' >
-          <Image src="/1.png" width={22} height={22} className={style.icon} alt="Andar Pratama Facebook Account" />
-        </Link>
-        <Link href='/' >
-          <Image src="/2.png" width={22} height={22} className={style.icon} alt="Andar Pratama Instagram Account" />
-        </Link>
-        <Link href='/' >
-          <Image src="/3.png" width={22} height={22} className={style.icon} alt="Andar Pratama Twitter Account" />
-        </Link>
-        <Link href='/' >
-          <Image src="/4.png" width={22} height={22} className={style.icon} alt="Andar Pratama Youtube Account" />
-        </Link>
+        {
+          socialMedia.map((sm)=> (
+            <Link key={sm.id} href='/' >
+              <Image src={sm.image} width={22} height={22} className={style.icon} alt={`Andar Pratama ${sm.title} Account`} />
+            </Link>
+          ))
+        }
+        
       </div>
     </div>
   )
