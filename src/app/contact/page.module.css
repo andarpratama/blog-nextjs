@@ -1,6 +1,9 @@
+.container {
+  padding: 40px 0 100px 0;
+}
 
 .title {
-  font-size: 60px;
+  font-size: 38px;
   margin-bottom: 100px;
   text-align: center;
 }
@@ -8,12 +11,13 @@
 .content {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 100px;
 }
 
 .imgContainer {
-  flex: 1;
-  height: 400px;
+  width: 240px;
+  height: 240px;
   position: relative;
 }
 
@@ -30,7 +34,7 @@
 }
 
 .input, .textarea {
-  padding: 20px;
+  padding: 12px;
   background-color: transparent;
   border: none;
   outline: none;
@@ -40,11 +44,42 @@
   border-radius: 5px;
 }
 
+.send {
+  text-align: center;
+}
+
 @keyframes move {
   from {
     transform: translateY(-15px);
   }
   to {
     transform: translateX(0px) scale(1.03);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-bottom: 50px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+  .content {
+    flex-direction: row;
+  }
+
+  .imgContainer {
+    flex: 1;
+    width: 400px;
+    height: 400px;
+  }
+
+  .input, .textarea {
+    padding: 20px;
+  }
+
+  .send {
+    text-align: left;
   }
 }
