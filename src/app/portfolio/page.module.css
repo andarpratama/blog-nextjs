@@ -1,9 +1,13 @@
+.layout {
+  padding-top: 40px;
+}
+
 .mainTitle {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .selectTitle {
-  margin: 20px 0;
+  margin: 60px 0 20px 0;
 }
 
 .items {
@@ -12,11 +16,17 @@
 }
 
 .item {
-  border: 5px solid #bbb;
+  border: 3px solid #bbb;
   border-radius: 5px;
   width: 300px;
   height: 400px;
   position: relative;
+  background-size: cover !important;
+}
+
+.item:hover {
+  color: #53c28b;
+  border-color: #53c28b;
 }
 
 .title {
