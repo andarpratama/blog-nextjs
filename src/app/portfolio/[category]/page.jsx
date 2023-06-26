@@ -6,7 +6,6 @@ import { getPortfolioByCategory } from '@/utils/portfolio'
 
 const Category = ({params}) => {
   const data = getPortfolioByCategory(params.category)
-  console.log(data)
   return (
     <div className={style.container} >
       <h1 className={style.catTitle} >{params.category}</h1>
