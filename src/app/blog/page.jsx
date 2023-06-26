@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Blog = () => {
   return (
-    <div className={style.container} >
+    <div className={style.mainContainer} >
       <Link href='/blog/testid1' className={style.container} >
         <div className={style.imgContainer}>
           <Image

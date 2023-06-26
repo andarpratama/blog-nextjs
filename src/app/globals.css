@@ -17,6 +17,20 @@ a {
   color: inherit;
 }
 
+.theme{
+  transition: 1s all ease;
+}
+
+.light {
+  background-color: white;
+  color: #111;
+}
+
+.dark {
+  background-color: #111;
+  color: #bbb;
+}
+
 .container {
   max-width: 1336px;
   min-height: 100vh;
@@ -24,7 +38,7 @@ a {
   padding: 0 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 @media only screen and (min-width: 768px) {

@@ -3,6 +3,7 @@ import React from 'react'
 import style from './navbar.module.css'
 import { links } from '@/utils/menu'
 import Badge from '../Badge/Badge'
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle'
 
 
 const Navbar = () => {
@@ -10,6 +11,7 @@ const Navbar = () => {
     <div className={style.container} >
       <Link className={style.logo} href='/' >Andar Pratama</Link>
       <div className={style.links} >
+        <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={style.link} >
             {link.title}

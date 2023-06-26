@@ -43,3 +43,39 @@
   line-height: 28px;
 }
 
+/* @media only screen and (min-width: 768px) {
+
+}  */
+
+/* .catTitle {
+  padding-bottom: 30px;
+  color: #53c28b;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ffffff64;
+}
+
+.item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.imgContainer {
+  flex: 1;
+  width: 100px;
+  height: 500px;
+  /* position: relative; */
+/* } */
+
+/* .title {
+  font-size: 50px;
+}
+
+.desc {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+} */ 
