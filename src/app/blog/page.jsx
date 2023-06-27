@@ -26,7 +26,7 @@ const Blog = () => {
               <p className={style.desc}>{item.desc}</p>
             </div>
           </Link>
-        ))
+        )) 
       }
       
     </div>
