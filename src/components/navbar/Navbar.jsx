@@ -17,7 +17,7 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        <button className={style.logout} >Logout</button>
+        <Link href='/dashboard/login' className={style.logout} >Login</Link>
       </div>
       <button className={style.mobile} url="/portfolio" >
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">

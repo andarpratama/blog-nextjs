@@ -8,7 +8,7 @@ const About = () => {
     <div className={style.container}>
       <div className={style.imgContainer}>
         <Image
-          src='https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+          src='/images/about.webp'
           fill={true}
           alt=''
           className={style.img}
