@@ -14,7 +14,7 @@ const Blog = () => {
           <Link href={`/blog/${item.id}`} className={style.container} key={item.id} >
             <div className={style.imgContainer}>
               <Image
-                src={item.image}
+                src={`/images${item.image}`}
                 alt={item.title}
                 width={400}
                 height={250}
